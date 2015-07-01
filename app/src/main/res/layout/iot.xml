@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*******************************************************************************
+* Copyright (c) 2014 IBM Corp.
+*
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* and Eclipse Distribution License v1.0 which accompany this distribution.
+*
+* The Eclipse Public License is available at
+*   http://www.eclipse.org/legal/epl-v10.html
+* and the Eclipse Distribution License is available at
+*   http://www.eclipse.org/org/documents/edl-v10.php.
+*
+* Contributors:
+*    Mike Robertson - initial contribution
+*******************************************************************************/
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ibm.iot.android.iotstarter.fragments.LoginFragment"
+    >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/MyActionBarTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_id_iot"
+            android:id="@+id/deviceIDSettingIoT"
+            />
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            style="@style/MyActionBarTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_id_iot_value"
+            android:id="@+id/deviceIDIoT"
+            />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_info_mobile"
+                android:id="@+id/mobileInfos"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="#ffff6d15"
+            android:layout_gravity="center_horizontal|top">
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_x"
+                android:id="@+id/accelX"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_y"
+                android:id="@+id/accelY"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_z"
+                android:id="@+id/accelZ"
+                android:layout_gravity="center_horizontal|bottom" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="54dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Accelerometer Data"
+                android:id="@+id/textView"
+                android:layout_gravity="left|center_vertical" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/accel_info_watch"
+                android:id="@+id/watchInfos"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffaf23ff"
+            android:layout_weight="0.30"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_x_watch"
+                android:id="@+id/accelXWatch"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_y_watch"
+                android:id="@+id/accelYWatch"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accel_z_watch"
+                android:id="@+id/accelZWatch"
+                android:layout_gravity="center_horizontal|bottom" />
+
+            <TextView
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Accelerometer Data"
+                android:id="@+id/textView2"
+                android:layout_gravity="left|center_vertical" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal|top"></FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34"
+            android:background="#ffaf23ff">
+
+            <TextView
+                style="@style/MyActionBarTitleText"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step_Counter"
+                android:id="@+id/stepCounter"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Steps Data"
+                android:id="@+id/textView3" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01">
+
+        <TextView
+            style="@style/MyActionBarTitleText"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/messages_published"
+            android:id="@+id/messagesPublishedView"
+            />
+
+        <TextView
+            style="@style/MyActionBarTitleText"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/messages_received"
+            android:id="@+id/messagesReceivedView"
+            />
+
+        <Button
+            style="@style/BottomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:id="@+id/sendText"
+            android:text="@string/send_text"/>
+    </LinearLayout>
+
+</LinearLayout>
